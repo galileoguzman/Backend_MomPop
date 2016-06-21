@@ -19,12 +19,13 @@ from django.contrib import admin
 from apps.users.views import home
 
 from tastypie.api import Api
-from apps.users.api import UserResource
+from apps.users.api import UserResource, FoodResource
 from apps.recipes.api import RecipeResource
 from apps.calories.api import CaloriResource
 
 v1_api = Api(api_name='v1')
 v1_api.register(UserResource())
+v1_api.register(FoodResource())
 v1_api.register(RecipeResource())
 v1_api.register(CaloriResource())
 

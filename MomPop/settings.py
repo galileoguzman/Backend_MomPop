@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'apps.users',
     'apps.calories',
     'apps.recipes',
-    'apps.foods',
 ]
 
 MIDDLEWARE_CLASSES = [

@@ -21,3 +21,17 @@ class User(AbstractBaseUser):
     def __unicode__(self):
         return self.email
 
+
+
+class Food(models.Model):
+    """
+    Custom user class.
+    """
+    name = models.CharField(max_length=50)
+    description = models.CharField(max_length=250)
+    image = models.ImageField(upload_to='uploads/foods', default='uploads/default.jpg')
+    qtc = models.IntegerField()
+    user = models.ForeignKey('User', on_delete=models.CASCADE)
+
+    def __unicode__(self):
+        return self.name
