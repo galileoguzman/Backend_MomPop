@@ -18,9 +18,13 @@ from django.contrib import admin
 
 from tastypie.api import Api
 from users.api import UserResource
+from recipes.api import RecipeResource
+from calories.api import CaloriResource
 
 v1_api = Api(api_name='v1')
 v1_api.register(UserResource())
+v1_api.register(RecipeResource())
+v1_api.register(CaloriResource())
 
 
 urlpatterns = [
