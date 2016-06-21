@@ -1,5 +1,5 @@
 from tastypie.resources import ModelResource
-from calories.models import Calorie
+from .models import Calorie
 
 
 class CaloriResource(ModelResource):

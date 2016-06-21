@@ -1,5 +1,5 @@
 from tastypie.resources import ModelResource
-from recipes.models import Recipe
+from .models import Recipe
 
 
 class RecipeResource(ModelResource):

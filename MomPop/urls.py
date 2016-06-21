@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf.urls import *
 from django.contrib import admin
 
+from apps.users.views import home
+
 from tastypie.api import Api
-from users.api import UserResource
-from recipes.api import RecipeResource
-from calories.api import CaloriResource
+from apps.users.api import UserResource
+from apps.recipes.api import RecipeResource
+from apps.calories.api import CaloriResource
 
 v1_api = Api(api_name='v1')
 v1_api.register(UserResource())
@@ -28,6 +30,7 @@ v1_api.register(CaloriResource())
 
 
 urlpatterns = [
+    url(r'^$', home, name='home'),
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(v1_api.urls)),
 ]

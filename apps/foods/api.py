@@ -1,5 +1,5 @@
 api.pyfrom tastypie.resources import ModelResource
-from foods.models import Food
+from .models import Food
 
 
 class FoodResource(ModelResource):

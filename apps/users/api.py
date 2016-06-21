@@ -1,5 +1,5 @@
 from tastypie.resources import ModelResource
-from users.models import User
+from .models import User
 
 
 class UserResource(ModelResource):
