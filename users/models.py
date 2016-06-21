@@ -12,7 +12,7 @@ class User(AbstractBaseUser):
     email = models.EmailField('email address', unique=True, db_index=True)
     type_user = models.BooleanField(default=True)
     born_date = models.DateField(auto_now=False, auto_now_add=False)
-    avatar = models.ImageField(upload_to='uploads', default='uploads/default.jpg')
+    avatar = models.ImageField(upload_to='uploads/avatars', default='uploads/default.jpg')
     is_admin = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
