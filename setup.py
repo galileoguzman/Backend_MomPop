@@ -4,17 +4,17 @@ from setuptools import setup
 
 setup(
     # GETTING-STARTED: set your app name:
-    name='YourAppName',
+    name='MomAndPop',
     # GETTING-STARTED: set your app version:
     version='1.0',
     # GETTING-STARTED: set your app description:
-    description='OpenShift App',
+    description='Mom and pop app instructs parents to take control and help their kids to develop habilities and a healthy lifestyle.',
     # GETTING-STARTED: set author name (your name):
-    author='Your Name',
+    author='@galileoguzman',
     # GETTING-STARTED: set author email (your email):
-    author_email='example@example.com',
+    author_email='mompopapp@gmail.com',
     # GETTING-STARTED: set author url (your url):
-    url='http://www.python.org/sigs/distutils-sig/',
+    url='https://github.com/galileoguzman/Backend_MomPop',
     # GETTING-STARTED: define required django version:
     install_requires=[
         'Django==1.8.4'
