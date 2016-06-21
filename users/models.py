@@ -10,6 +10,7 @@ class User(AbstractBaseUser):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     email = models.EmailField('email address', unique=True, db_index=True)
+    email = models.CharField(max_length=10)
     type_user = models.BooleanField(default=True)
     born_date = models.DateField(auto_now=False, auto_now_add=False)
     avatar = models.ImageField(upload_to='uploads/avatars', default='uploads/default.jpg')
